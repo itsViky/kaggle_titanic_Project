@@ -13,7 +13,7 @@ Check out the “Data” tab to explore the datasets even further. Once you feel
 
 
 
-2. Dataset Description
+2. Dataset Description :-
 
 The data has been split into two groups:
 
@@ -26,7 +26,7 @@ Test set (test.csv) :-
             
             
             
-3. Submission File Format:
+3. Submission File Format:-
 
 We should submit a csv file with exactly 418 entries plus a header row. Your submission will show an error if you have extra columns (beyond PassengerId and Survived) or rows.
 
@@ -35,3 +35,12 @@ The file should have exactly 2 columns:
   PassengerId (sorted in any order)
   
   Survived (contains your binary predictions: 1 for survived, 0 for deceased)
+
+
+
+
+4. Model Used In Project :-
+
+I build what's known as a random forest model. This model is constructed of several "trees" (there are three trees in the picture below, but we'll construct 100!) that will individually consider each passenger's data and vote on whether the individual survived. Then, the random forest model makes a democratic decision: the outcome with the most votes wins!
+
+The randomness in selecting subsets of the data and features helps to reduce the correlation between the individual trees, which leads to more accurate and reliable predictions.
